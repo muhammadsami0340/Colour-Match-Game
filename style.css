@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  /* font-family: Arial, sans-serif; */
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at center, rgb(0, 255, 0), rgb(0, 183, 255));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.main {
+  width: 100%;
+  max-width: 750px;
+  background: radial-gradient(circle at center, red, blue);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px red;
+  text-align: center;
+}
+.wrongScore {
+  width: 100%;
+  font-size: 40px;  
+  text-align: center;
+  color: lightgreen;
+  text-shadow: 10px 10px 20px rgb(0, 255, 76);
+}
+.scoreBox {
+  width: 100%;
+  font-size: 50px;
+  margin-top: 0px;
+  text-align: start;
+  color: lightgreen;
+  text-shadow: 10px 10px 20px rgb(0, 255, 76);
+}
+.aim {
+  height: 100px;
+  width: 100px;
+  border: 3px solid black;
+  box-shadow: 5px 5px 20px black;
+  border-radius: 10%;
+  margin: 15px auto 25px;
+}
+.action {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 12px;
+  justify-items: center;
+}
+.boxes {
+  width: 100%;
+  max-width: 100px;
+  height: 80px;
+  border-radius: 10%;
+  border: 1px solid black;
+  box-shadow: 5px 5px 20px black;
+  transition: 0.3s; 
+}
+.boxes:hover {
+ transform: scale(1.15);
+}
+@media (max-width: 768px) {
+.wrongScore {
+ font-size: 30px;
+}
+.scoreBox {
+ font-size: 35px;
+}
+.aim {
+ width: 80px;
+ height: 80px;
+}
+.boxes {
+ height: 80px;
+}
+}
+@media (max-width: 480px) {
+.main{
+ width:100%;
+ max-width: 250px;}
+.wrongScore {
+ font-size: 22px;
+}
+.scoreBox {
+ font-size: 26px;
+}
+.aim {
+ width: 60px;
+ height: 60px;
+}
+.boxes {
+ height: 60px;
+}
+.action {
+ gap: 8px;
+}
+}
