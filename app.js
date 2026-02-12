@@ -40,8 +40,8 @@ function game(){
     boardDiv.innerHTML = "";
     targetColor = randomColor();
     targetDiv.style.backgroundColor = targetColor;
-    var index = Math.floor(Math.random() * 29);
-    for (var i = 0; i <= 29; i++){
+    var index = Math.floor(Math.random() * 34);
+    for (var i = 0; i <= 34; i++){
 
         var divElm = document.createElement("div");
         divElm.className = "boxes";

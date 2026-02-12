@@ -3,9 +3,8 @@
   box-sizing: border-box;
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
-  /* font-family: Arial, sans-serif; */
   margin: 0;
   padding: 0;
 }
@@ -93,13 +92,14 @@ body {
  font-size: 26px;
 }
 .aim {
- width: 60px;
- height: 60px;
+ width: 50px;
+ height: 50px;
 }
 .boxes {
- height: 60px;
+ height: 20px;
 }
 .action {
+ grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
  gap: 8px;
 }
 }
